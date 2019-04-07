@@ -10,11 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var productDesLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func didTapOnMedia(_ sender: Any) {
+        
+    }
+    
 
 }
 

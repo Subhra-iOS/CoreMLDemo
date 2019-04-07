@@ -14,6 +14,9 @@
 		2A13B575225A1C54002137C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A13B573225A1C54002137C9 /* LaunchScreen.storyboard */; };
 		2A13B580225A1C54002137C9 /* CoreMLVisionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13B57F225A1C54002137C9 /* CoreMLVisionDemoTests.swift */; };
 		2A13B58B225A1C54002137C9 /* CoreMLVisionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13B58A225A1C54002137C9 /* CoreMLVisionDemoUITests.swift */; };
+		2A5D6CE5225A65C8004068D2 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D6CE2225A65C8004068D2 /* MobileNet.mlmodel */; };
+		2A5D6CE6225A65C8004068D2 /* NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2A5D6CE3225A65C8004068D2 /* NOTICE.txt */; };
+		2A5D6CE7225A65C8004068D2 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2A5D6CE4225A65C8004068D2 /* LICENSE.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		2A13B586225A1C54002137C9 /* CoreMLVisionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMLVisionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A13B58A225A1C54002137C9 /* CoreMLVisionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLVisionDemoUITests.swift; sourceTree = "<group>"; };
 		2A13B58C225A1C54002137C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5D6CE2225A65C8004068D2 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		2A5D6CE3225A65C8004068D2 /* NOTICE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
+		2A5D6CE4225A65C8004068D2 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		2A13B569225A1C52002137C9 /* CoreMLVisionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2A5D6CE1225A65C8004068D2 /* Model */,
 				2A13B56A225A1C52002137C9 /* AppDelegate.swift */,
 				2A13B56C225A1C52002137C9 /* ViewController.swift */,
 				2A13B56E225A1C52002137C9 /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				2A13B58C225A1C54002137C9 /* Info.plist */,
 			);
 			path = CoreMLVisionDemoUITests;
+			sourceTree = "<group>";
+		};
+		2A5D6CE1225A65C8004068D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A5D6CE2225A65C8004068D2 /* MobileNet.mlmodel */,
+				2A5D6CE3225A65C8004068D2 /* NOTICE.txt */,
+				2A5D6CE4225A65C8004068D2 /* LICENSE.txt */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +248,8 @@
 			files = (
 				2A13B575225A1C54002137C9 /* LaunchScreen.storyboard in Resources */,
 				2A13B572225A1C54002137C9 /* Assets.xcassets in Resources */,
+				2A5D6CE6225A65C8004068D2 /* NOTICE.txt in Resources */,
+				2A5D6CE7225A65C8004068D2 /* LICENSE.txt in Resources */,
 				2A13B570225A1C52002137C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +277,7 @@
 			files = (
 				2A13B56D225A1C52002137C9 /* ViewController.swift in Sources */,
 				2A13B56B225A1C52002137C9 /* AppDelegate.swift in Sources */,
+				2A5D6CE5225A65C8004068D2 /* MobileNet.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
