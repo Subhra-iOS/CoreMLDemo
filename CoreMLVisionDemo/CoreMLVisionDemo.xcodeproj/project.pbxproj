@@ -14,6 +14,9 @@
 		2A13B575225A1C54002137C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A13B573225A1C54002137C9 /* LaunchScreen.storyboard */; };
 		2A13B580225A1C54002137C9 /* CoreMLVisionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13B57F225A1C54002137C9 /* CoreMLVisionDemoTests.swift */; };
 		2A13B58B225A1C54002137C9 /* CoreMLVisionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13B58A225A1C54002137C9 /* CoreMLVisionDemoUITests.swift */; };
+		2A1B73A4225BB4840025B381 /* CoreMLVisionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B73A3225BB4840025B381 /* CoreMLVisionHandler.swift */; };
+		2A1B73A9225BBA410025B381 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1B73A8225BBA410025B381 /* CoreML.framework */; };
+		2A1B73AB225BBA4B0025B381 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1B73AA225BBA4B0025B381 /* Vision.framework */; };
 		2A5D6CE5225A65C8004068D2 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D6CE2225A65C8004068D2 /* MobileNet.mlmodel */; };
 		2A5D6CE6225A65C8004068D2 /* NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2A5D6CE3225A65C8004068D2 /* NOTICE.txt */; };
 		2A5D6CE7225A65C8004068D2 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2A5D6CE4225A65C8004068D2 /* LICENSE.txt */; };
@@ -50,6 +53,9 @@
 		2A13B586225A1C54002137C9 /* CoreMLVisionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMLVisionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A13B58A225A1C54002137C9 /* CoreMLVisionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLVisionDemoUITests.swift; sourceTree = "<group>"; };
 		2A13B58C225A1C54002137C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A1B73A3225BB4840025B381 /* CoreMLVisionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLVisionHandler.swift; sourceTree = "<group>"; };
+		2A1B73A8225BBA410025B381 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		2A1B73AA225BBA4B0025B381 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
 		2A5D6CE2225A65C8004068D2 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 		2A5D6CE3225A65C8004068D2 /* NOTICE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
 		2A5D6CE4225A65C8004068D2 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -60,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1B73AB225BBA4B0025B381 /* Vision.framework in Frameworks */,
+				2A1B73A9225BBA410025B381 /* CoreML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +95,7 @@
 				2A13B57E225A1C54002137C9 /* CoreMLVisionDemoTests */,
 				2A13B589225A1C54002137C9 /* CoreMLVisionDemoUITests */,
 				2A13B568225A1C52002137C9 /* Products */,
+				2A1B73A7225BBA410025B381 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +112,7 @@
 		2A13B569225A1C52002137C9 /* CoreMLVisionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2A1B73A2225BB4570025B381 /* CoreMLVisionHandler */,
 				2A5D6CE1225A65C8004068D2 /* Model */,
 				2A13B56A225A1C52002137C9 /* AppDelegate.swift */,
 				2A13B56C225A1C52002137C9 /* ViewController.swift */,
@@ -130,6 +140,23 @@
 				2A13B58C225A1C54002137C9 /* Info.plist */,
 			);
 			path = CoreMLVisionDemoUITests;
+			sourceTree = "<group>";
+		};
+		2A1B73A2225BB4570025B381 /* CoreMLVisionHandler */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B73A3225BB4840025B381 /* CoreMLVisionHandler.swift */,
+			);
+			path = CoreMLVisionHandler;
+			sourceTree = "<group>";
+		};
+		2A1B73A7225BBA410025B381 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B73AA225BBA4B0025B381 /* Vision.framework */,
+				2A1B73A8225BBA410025B381 /* CoreML.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2A5D6CE1225A65C8004068D2 /* Model */ = {
@@ -275,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1B73A4225BB4840025B381 /* CoreMLVisionHandler.swift in Sources */,
 				2A13B56D225A1C52002137C9 /* ViewController.swift in Sources */,
 				2A13B56B225A1C52002137C9 /* AppDelegate.swift in Sources */,
 				2A5D6CE5225A65C8004068D2 /* MobileNet.mlmodel in Sources */,
@@ -454,6 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoreMLVisionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoreMLVisionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
