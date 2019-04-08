@@ -4,9 +4,10 @@
 //
 //  Created by Subhra Roy on 07/04/19.
 //  Copyright © 2019 Subhra Roy. All rights reserved.
-//
+// defaults write com.apple.finder AppleShowAllFiles TRUE
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
 
@@ -19,7 +20,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapOnMedia(_ sender: Any) {
-        
+        let actionSheetAlertController : UIAlertController = UIAlertController(title: "Alert", message: "Please select your source.", preferredStyle: .actionSheet)
+        let cameraAction : UIAlertAction = UIAlertAction(title: "Camera", style: .cancel) { (action) in
+            
+        }
     }
     
 
