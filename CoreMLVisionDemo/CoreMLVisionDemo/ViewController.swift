@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             return
         }
         
-        let photoSourcePicker = UIAlertController()
+        let photoSourcePicker : UIAlertController = UIAlertController(title: "Alert", message: "", preferredStyle: UIAlertController.Style.alert)
         let takePhoto = UIAlertAction(title: "Take Photo", style: .default) { [unowned self] _ in
             self.presentPhotoPicker(sourceType: .camera)
         }
